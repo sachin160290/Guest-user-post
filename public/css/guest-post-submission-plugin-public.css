@@ -1,0 +1,132 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  position: relative;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+#guest_post_form input[type=text], #guest_post_form input[type=file], #guest_post_form select, #guest_post_form textarea {
+  width: 100%; /* Full width */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */   
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  padding: 10px;
+}
+
+/* Style the submit button with a specific background color etc */
+#guest_post_form input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+#guest_post_form  input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+#guest_post_form{
+  padding: 20px;
+}  
+
+#guest_post_form .form-group {
+padding: 0px 10px 10px 0px;
+width: 100%;
+}
+
+#guest_post_form span.error-message {
+font-size: 15px;
+color: #f00;
+line-height: 18px;
+display: block;
+}
+
+#guest_post_form .ajax-message .success-message {
+color: #185018;
+}
+
+#guest_post_form .overlay-loader-blk {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(255,255,255,.5);
+display: flex;
+align-items: center;
+justify-content: center;
+display: none;
+}
+#guest_post_form .overlay-loader-blk img {
+max-width: 35px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+
+.guest-post-listing {
+width: auto;
+max-width: 100% !important;
+margin: 0 auto; 
+}  
+
+.guest-post-listing table {
+margin-left: auto;
+margin-right: auto;
+}
+
+.guest-post-listing table tr td {
+padding: 20px;
+}
+
+.guest-post-listing table tr td img {
+max-width: 150px;
+height: auto;
+}
+
+
+.guest-post-listing table tr.no-item-found{
+text-align: center;;
+}
+.guest-post-listing .pagination ul {
+display: inline-block;
+width: 100%;
+}
+
+.guest-post-listing .pagination li {
+list-style: none;
+display: inline-block;
+}
+.guest-post-listing .pagination a, .guest-post-listing .pagination li span.current   {
+color: black;
+float: left;
+padding: 8px 16px;
+text-decoration: none;
+transition: background-color .3s;
+border: 1px solid #ddd;
+}
+
+.guest-post-listing .pagination li span.current {
+background-color: #4CAF50;
+color: white;
+border: 1px solid #4CAF50;
+}
+
+.guest-post-listing .pagination a:hover:not(.active) {background-color: #ddd;}
+
+.info-text{
+text-align: center;
+}
